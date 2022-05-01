@@ -5,10 +5,13 @@ body{
 }
 
 h1{
-    color: red;
-    background-color: black;
+    font-family: 'Shrikhand';
 }
 
+.section-1 button{
+   background-color: #FF79DA;
+   border-radius: 15px;
+}
 
 ol li{
     list-style-position: inside;
