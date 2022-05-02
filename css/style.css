@@ -1,19 +1,19 @@
-body{
-    font-family:  'Roboto',  'sans-serif';
+body {
+    font-family: 'Roboto', 'sans-serif';
     max-width: 480px;
-    
+
 }
 
-h1{
+h1 {
     font-family: 'Shrikhand';
 }
 
-.section-1 button{
-   background-color: #FF79DA;
-   border-radius: 15px;
+.section-1 button {
+    background-color: #FF79DA;
+    border-radius: 15px;
 }
 
-ol li{
+ol li {
     list-style-position: inside;
     background-color: #f2f2f2;
     margin: 10px;
@@ -22,20 +22,21 @@ ol li{
 
 }
 
-li::marker{
+li::marker {
     border: solid 1px violet;
 }
-img{
+
+img {
     width: 100%;
 }
 
-.dessous{
+.dessous {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.dessous i{
+.dessous i {
     font-size: 20px;
     border-color: red;
 
@@ -60,10 +61,10 @@ img{
 
 
 
-footer{
+footer {
     background-color: black;
 }
 
-footer ul{
+footer ul {
     color: white;
 }
