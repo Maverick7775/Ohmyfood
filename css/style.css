@@ -4,6 +4,7 @@ body {
 
 }
 
+
 h1 {
     font-family: 'Shrikhand';
 }
@@ -24,10 +25,12 @@ ol li {
 
 li::marker {
     border: solid 1px violet;
+    background-color: red;
 }
 
 img {
     width: 100%;
+    height: 200px;
 }
 
 .dessous {
