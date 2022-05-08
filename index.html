@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./sass/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,8 +19,8 @@
 <body>
     <header>
         <h1>Ohmyfood</h1>
-        <div class="lieu">
-            <form action="URL" method="get" aria-placeholder="Paris, Belleville">
+        <div class="header__text">
+            <form action="URL" method="get">
                 <i class="fa-solid fa-location-dot"></i>Paris, Belleville
 
             </form>
@@ -37,15 +37,15 @@
 
             <h2>Fonctionnement</h2>
             <ol>
-                <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
-                <li><i class="fa-solid fa-list"></i>Composez votre menu</li>
-                <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+                <li><span class="number">1</span><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
+                <li><span class="number">2</span><i class="fa-solid fa-list"></i>Composez votre menu</li>
+                <li><span class="number">3</span><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
             </ol>
 
         </section>
 
         <section class="restaurants">
-
+<h2>Restaurants</h2>
             <div class="carte">
                 <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
                 <span class="nouveau">Nouveau</span>
