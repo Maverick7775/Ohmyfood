@@ -10,9 +10,16 @@ body {
     max-width: 480px;
     margin: 0;
 }
-a{
-    text-decoration: none;
+
+li {
+    list-style: none;
 }
+
+a {
+    text-decoration: none;
+
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -81,7 +88,7 @@ ol {
 
 
     li {
-        list-style: none;
+
         background-color: #f2f2f2;
         border-radius: 15px;
         height: 80px;
@@ -159,9 +166,10 @@ ol {
 
             i {
                 font-size: 20px;
-                transform:scale(1.0,1.3);
-                :hover{
-                background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                transform: scale(1.0, 1.3);
+
+                :hover {
+                    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
                 }
             }
         }
@@ -199,11 +207,29 @@ h2 {
 
 footer {
     background-color: rgb(43, 42, 42);
-    h3{
+    min-height: 100px;
+
+    h3 {
         color: white;
         font-family: 'Shrikhand', 'cursive';
+        margin: 20px;
+        padding-top: 20px;
     }
- ul {
-    color: white;
-}}
 
+    ul {
+        margin: 20px;
+        padding: 0;
+
+        li {
+            margin: 10px;
+
+            a {
+                color: white;
+            }
+
+        }
+        i{
+            margin-right: 10px;
+        }
+    }
+}
