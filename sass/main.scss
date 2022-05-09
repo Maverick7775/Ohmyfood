@@ -1,5 +1,7 @@
 @import './utils/_variables';
 @import './utils/mixins';
+@import './layout/header';
+@import './layout/footer';
 
 * {
     box-sizing: border-box;
@@ -7,7 +9,6 @@
 
 body {
     font-family: 'Roboto', 'sans-serif';
-    max-width: 480px;
     margin: 0;
 }
 
@@ -21,36 +22,7 @@ a {
 }
 
 img{
-    max-width: 480px;
-}
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h1 {
-        font-family: 'Shrikhand', 'cursive';
-        box-shadow: rgba(0, 0, 0, 0.15) 0 1.95px 2.6px;
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }
-
-    .header__text {
-        width: 100%;
-        height: 80px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: darken($color: #ffffff9d, $amount: 20%);
-
-
-    }
-
-    i {
-        margin-right: 15px;
-    }
+    width: 100%;
 }
 
 // Section 1
@@ -65,6 +37,21 @@ header {
     min-height: 300px;
     padding: 20px;
 
+    .header__text {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darken($color: grey, $amount: 20%);
+
+
+    }
+
+    i {
+        margin-right: 15px;
+    }
     p,
     h2 {
         text-align: center;
@@ -138,7 +125,6 @@ ol {
         position: relative;
 
         img {
-            width: 100%;
             height: 200px;
             border-radius: 40px 40px 0 0;
             object-fit: cover;
@@ -171,8 +157,10 @@ ol {
                 font-size: 20px;
                 transform: scale(1.0, 1.3);
 
-                :hover {
-                    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                i:hover {
+                    background-color: $primary-color;
+                    cursor: pointer;
+                    // background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
                 }
             }
         }
@@ -193,46 +181,3 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    background-color: rgb(43, 42, 42);
-    min-height: 100px;
-
-    h3 {
-        color: white;
-        font-family: 'Shrikhand', 'cursive';
-        margin: 20px;
-        padding-top: 20px;
-    }
-
-    ul {
-        margin: 20px;
-        padding: 0;
-
-        li {
-            margin: 10px;
-
-            a {
-                color: white;
-            }
-
-        }
-        i{
-            margin-right: 10px;
-        }
-    }
-}

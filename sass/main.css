@@ -1,10 +1,42 @@
+header h1 {
+  font-family: "Shrikhand", "cursive";
+  box-shadow: rgba(0, 0, 0, 0.15) 0 1.95px 2.6px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+footer {
+  background-color: rgb(43, 42, 42);
+  min-height: 100px;
+}
+footer h3 {
+  color: white;
+  font-family: "Shrikhand", "cursive";
+  margin: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+footer ul {
+  margin: 20px;
+  padding: 0;
+}
+footer ul li {
+  margin: 10px;
+}
+footer ul li a {
+  color: white;
+}
+footer ul i {
+  margin-right: 10px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", "sans-serif";
-  max-width: 480px;
   margin: 0;
 }
 
@@ -17,32 +49,7 @@ a {
 }
 
 img {
-  max-width: 480px;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header h1 {
-  font-family: "Shrikhand", "cursive";
-  box-shadow: rgba(0, 0, 0, 0.15) 0 1.95px 2.6px;
   width: 100%;
-  text-align: center;
-  margin: 0;
-}
-header .header__text {
-  width: 100%;
-  height: 80px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(204, 204, 204, 0.6156862745);
-}
-header i {
-  margin-right: 15px;
 }
 
 .section-1 {
@@ -54,6 +61,18 @@ header i {
   text-align: justify;
   min-height: 300px;
   padding: 20px;
+}
+.section-1 .header__text {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d4d4d;
+}
+.section-1 i {
+  margin-right: 15px;
 }
 .section-1 p,
 .section-1 h2 {
@@ -117,7 +136,6 @@ ol li i {
   position: relative;
 }
 .restaurants .carte img {
-  width: 100%;
   height: 200px;
   border-radius: 40px 40px 0 0;
   -o-object-fit: cover;
@@ -148,35 +166,12 @@ ol li i {
   font-size: 20px;
   transform: scale(1, 1.3);
 }
-.restaurants .carte .dessous i :hover {
-  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+.restaurants .carte .dessous i i:hover {
+  background-color: #9356DC;
+  cursor: pointer;
 }
 
 h2 {
   font-size: 22px;
   margin-left: 20px;
-}
-
-footer {
-  background-color: rgb(43, 42, 42);
-  min-height: 100px;
-}
-footer h3 {
-  color: white;
-  font-family: "Shrikhand", "cursive";
-  margin: 20px;
-  padding-top: 20px;
-}
-footer ul {
-  margin: 20px;
-  padding: 0;
-}
-footer ul li {
-  margin: 10px;
-}
-footer ul li a {
-  color: white;
-}
-footer ul i {
-  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
