@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -43,13 +47,14 @@ header i {
   min-height: 300px;
   padding: 20px;
 }
-.section-1 p {
+.section-1 p,
+.section-1 h2 {
   text-align: center;
 }
 .section-1 button {
   border-radius: 40px;
   justify-content: center;
-  width: 50%;
+  width: 60%;
   height: 60px;
   background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   color: white;
@@ -70,10 +75,14 @@ ol li {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: flex-start;
   margin: 20px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: relative;
   font-weight: bold;
+}
+ol li :hover {
+  background: #9356dc;
 }
 ol li .number {
   border-radius: 100%;
@@ -84,26 +93,56 @@ ol li .number {
   text-align: center;
   position: absolute;
   left: -12px;
+  color: white;
 }
 ol li i {
   color: grey;
-  margin: 0 20px;
+  margin: 0 20px 0 30px;
 }
 
-img {
+.restaurants {
+  background-color: #f2f2f2;
+}
+.restaurants .carte {
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 20px;
+  position: relative;
+}
+.restaurants .carte img {
   width: 100%;
   height: 200px;
+  border-radius: 40px 40px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
-.dessous {
+.restaurants .carte .nouveau {
+  position: absolute;
+  background-color: #99E2D0;
+  right: 40px;
+  top: 20px;
+  padding: 5px;
+  color: green;
+  border-radius: 2px;
+}
+.restaurants .carte .dessous {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  background-color: white;
+  border-radius: 0 0 40px 40px;
+  height: 80px;
 }
-
-.dessous i {
+.restaurants .carte .dessous h3,
+.restaurants .carte .dessous p {
+  margin: 5px;
+}
+.restaurants .carte .dessous i {
   font-size: 20px;
-  border-color: red;
+  transform: scale(1, 1.3);
+}
+.restaurants .carte .dessous i :hover {
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 }
 
 h2 {
@@ -112,9 +151,12 @@ h2 {
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(43, 42, 42);
 }
-
+footer h3 {
+  color: white;
+  font-family: "Shrikhand", "cursive";
+}
 footer ul {
   color: white;
 }/*# sourceMappingURL=main.css.map */
