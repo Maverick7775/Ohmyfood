@@ -1,28 +1,25 @@
 footer {
     background-color: rgb(43, 42, 42);
-    min-height: 100px;
+    min-height: 190px;
 
     h3 {
         color: white;
         font-family: 'Shrikhand', 'cursive';
-        margin: 20px;
+        margin: 0;
         padding-top: 20px;
-        padding-left: 10px;
+        padding-left: 30px;
     }
-
+    
     ul {
         margin: 20px;
         padding: 0;
-
         li {
             margin: 10px;
-
             a {
                 color: white;
             }
-
         }
-        i{
+        i {
             margin-right: 10px;
         }
     }

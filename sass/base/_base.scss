@@ -5,6 +5,7 @@
 body {
     font-family: 'Roboto', 'sans-serif';
     margin: 0;
+    max-width: 1440px;
 }
 
 li {
@@ -13,9 +14,17 @@ li {
 
 a {
     text-decoration: none;
+    color: inherit;
+
 
 }
 
-img{
+img {
     width: 100%;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0;
+    padding: 20px
 }
