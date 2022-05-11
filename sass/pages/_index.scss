@@ -30,18 +30,7 @@ z-index: 1;
         text-align: center;
     }
 
-    button {
-        border-radius: 40px;
-        justify-content: center;
-        width: 50%;
-        height: 60px;
-        background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-        border: none;
-        cursor: pointer;
-    }
+    
 }
 
 
@@ -97,7 +86,7 @@ ol {
 .cards{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
 
     .card {
@@ -105,6 +94,10 @@ ol {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         position: relative;
         margin: 20px 0;
+        &:hover{
+            transform: scale(1.02);
+            transition: ease-in-out 0.2s;
+        }
 
         img {
             height: 200px;
@@ -153,16 +146,14 @@ ol {
    
 }
 
-@media (min-width:480px) {
+@media (min-width:800px) {
 
     .section-1 button{
         width: 30%;
     }
     .restaurants .cards{
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
 
         .card{
             width: 45%;
