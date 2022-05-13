@@ -54,6 +54,27 @@ button {
   padding-right: 10px;
 }
 
+.heart {
+  margin-right: 20px;
+  position: relative;
+}
+.heart i {
+  font-size: 20px;
+  transform: scale(1.1, 1.3);
+  position: absolute;
+}
+.heart .fa-solid {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all ease-in-out 1s;
+  opacity: 0;
+}
+.heart .fa-solid:hover {
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  opacity: 1;
+}
+
 header {
   margin: 0;
   box-shadow: 0px 3px 3px grey;
@@ -212,25 +233,6 @@ ol li i {
 .restaurants .cards .card .dessous .texte p {
   margin: 5px;
 }
-.restaurants .cards .card .dessous .heart {
-  margin-right: 20px;
-}
-.restaurants .cards .card .dessous .heart i {
-  font-size: 20px;
-  transform: scale(1.1, 1.3);
-  position: absolute;
-  top: 40%;
-  right: 20px;
-}
-.restaurants .cards .card .dessous .heart .fa-solid {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.restaurants .cards .card .dessous .heart .fa-solid:hover {
-  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  transition: ease 1s;
-}
 
 @media (min-width: 800px) {
   .section-1 button {
@@ -271,19 +273,9 @@ ol li i {
   font-family: "Shrikhand", "cursive";
   padding: 0;
 }
-.titre i {
-  margin-right: 20px;
-  font-size: 20px;
-  transform: scale(1.2, 1.3);
-}
 
 .proj {
   margin: 20px;
-}
-.proj__titre {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .proj__titre h4 {
   padding-top: 10px;
@@ -301,6 +293,26 @@ ol li i {
   margin: 20px 0;
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+}
+.proj__card:hover .check {
+  transition: all ease-in-out 1s;
+  width: 100px;
+  color: white;
+}
+.proj__card .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  position: absolute;
+  background-color: #99E2D0;
+  color: transparent;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
 }
 .proj__card--flex {
   display: flex;
