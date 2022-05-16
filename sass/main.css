@@ -5,7 +5,6 @@
 body {
   font-family: "Roboto", "sans-serif";
   margin: 0;
-  max-width: 1440px;
 }
 
 li {
@@ -35,6 +34,9 @@ h5,
 p {
   margin: 5px;
   font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 button {
@@ -294,11 +296,23 @@ ol li i {
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: relative;
+  overflow: hidden;
 }
 .proj__card:hover .check {
-  transition: all ease-in-out 1s;
+  transition: all linear 0.5s;
   width: 100px;
   color: white;
+}
+.proj__card:hover .check i {
+  font-size: 30px;
+}
+.proj__card:hover .check .fa-circle-check {
+  transform: rotate(360deg);
+  transition: all linear 0.5s;
+}
+.proj__card:hover .prix {
+  transition: all linear 0.5s;
+  transform: translateX(-100px);
 }
 .proj__card .check {
   display: flex;
@@ -313,6 +327,7 @@ ol li i {
   color: transparent;
   height: 100%;
   border-radius: 0 20px 20px 0;
+  float: right;
 }
 .proj__card--flex {
   display: flex;
@@ -321,6 +336,9 @@ ol li i {
 }
 .proj__card--flex .prix {
   font-weight: bold;
+  background-color: white;
+  padding: 5px;
+  display: block;
 }
 
 .button {
