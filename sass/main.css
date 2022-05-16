@@ -304,7 +304,7 @@ ol li i {
   color: white;
 }
 .proj__card:hover .check i {
-  font-size: 30px;
+  font-size: 28px;
 }
 .proj__card:hover .check .fa-circle-check {
   transform: rotate(360deg);
