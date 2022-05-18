@@ -58,7 +58,7 @@ button {
 }
 button:hover {
   filter: brightness(130%);
-  box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 5px;
 }
 
 .heart {
@@ -154,6 +154,7 @@ footer ul i {
 .section-1 p,
 .section-1 h2 {
   text-align: center;
+  white-space: inherit;
 }
 
 ol {
@@ -323,7 +324,7 @@ ol li i {
 }
 .proj__card:hover .prix {
   transition: all linear 0.3s;
-  transform: translateX(-80px);
+  margin-right: 80px;
 }
 .proj__card .check {
   display: flex;
@@ -342,13 +343,17 @@ ol li i {
 .proj__card--flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+}
+.proj__card--flex .card__menu {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .proj__card--flex .prix {
   font-weight: bold;
   background-color: white;
-  padding: 5px;
-  display: block;
+  padding: 5px 5px 5px 5px;
 }
 
 .button {
