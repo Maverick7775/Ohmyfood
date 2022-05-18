@@ -22,7 +22,8 @@ img {
   max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 h2 {
