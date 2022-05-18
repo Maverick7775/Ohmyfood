@@ -55,9 +55,10 @@ ol {
 
         &:hover {
             background: #9356dc30;
-
+            transition: all linear .3s;
             i {
                 color: $primary-color;
+                transition: all linear .3s;
             }
         }
 

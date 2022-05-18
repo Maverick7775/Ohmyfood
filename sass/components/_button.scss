@@ -15,8 +15,8 @@ button {
     padding-right: 10px;
     @include shadowbox(0.35);
     &:hover{
-        filter: brightness(130%);
-        @include shadowbox(0.6);
+        filter: brightness(115%);
+        @include shadowbox(0.5);
         transition: all linear .3s;
         
     }

@@ -4,10 +4,11 @@ header {
     padding: 20px 0;
     font-family: 'Shrikhand', 'cursive';
     width: 100%;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    
 
 
 
@@ -15,6 +16,7 @@ header {
         transform: scale(2);
         position: absolute;
         left: 30px;
+        top: 35px;
     }
 
     h1 {
