@@ -10,13 +10,14 @@ button {
     border: none;
     cursor: pointer;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
     @include shadowbox(0.35);
     &:hover{
         filter: brightness(130%);
-        @include shadowbox(0.6)
+        @include shadowbox(0.6);
+        transition: all linear .3s;
         
     }
 }

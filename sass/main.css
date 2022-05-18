@@ -51,7 +51,7 @@ button {
   border: none;
   cursor: pointer;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   padding-left: 10px;
   padding-right: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
@@ -59,11 +59,11 @@ button {
 button:hover {
   filter: brightness(130%);
   box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 5px;
+  transition: all linear 0.3s;
 }
 
 .heart {
   margin-right: 20px;
-  position: relative;
 }
 .heart i {
   font-size: 20px;
@@ -136,7 +136,6 @@ footer ul i {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  min-height: 300px;
   z-index: 1;
 }
 .section-1 .header__text {
@@ -266,7 +265,8 @@ ol li i {
     justify-content: space-around;
   }
   ol li {
-    width: 25%;
+    width: 30%;
+    padding-right: 10px;
   }
 }
 .background {
@@ -274,6 +274,7 @@ ol li i {
   border-radius: 40px 40px 0 0;
   position: relative;
   margin-top: -40px;
+  padding-top: 20px;
 }
 
 .titre {
@@ -281,11 +282,15 @@ ol li i {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  position: relative;
 }
 .titre h2 {
   margin-left: 10px;
   font-family: "Shrikhand", "cursive";
   padding: 0;
+}
+.titre .heart i {
+  top: 30%;
 }
 
 .proj {
@@ -304,7 +309,7 @@ ol li i {
 .proj__card {
   background-color: white;
   border-radius: 20px;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: relative;
@@ -366,11 +371,14 @@ ol li i {
 @media (min-width: 800px) {
   .card__flex {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
   }
-
-  .proj__card {
+  .card__flex .proj {
     width: 32%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
   }
 }/*# sourceMappingURL=main.css.map */

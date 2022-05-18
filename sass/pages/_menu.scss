@@ -3,6 +3,7 @@
     border-radius: 40px 40px 0 0;
     position: relative;
     margin-top: -40px;
+    padding-top: 20px;
 }
 
 .titre {
@@ -10,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    position: relative;
 
     h2 {
         margin-left: 10px;
@@ -17,6 +19,9 @@
         padding: 0;
     }
 
+    .heart i {
+        top: 30%;
+    }
 }
 
 .proj {
@@ -41,7 +46,7 @@
     &__card {
         background-color: white;
         border-radius: 20px;
-        margin: 20px 0;
+        margin: 10px 0;
         padding: 15px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         position: relative;
@@ -51,7 +56,7 @@
         &:hover .check {
             transition: all linear .3s;
             width: 80px;
-            
+
             i {
                 font-size: 28px;
                 color: white;
@@ -93,7 +98,8 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            .card__menu{
+
+            .card__menu {
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -121,12 +127,16 @@
 
     .card__flex {
         display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 100%;
 
+        .proj {
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
     }
 
-    .proj__card {
-        width: 32%;
-    }
 }
