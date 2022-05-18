@@ -13,4 +13,10 @@ button {
     margin-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    @include shadowbox(0.35);
+    &:hover{
+        filter: brightness(130%);
+        @include shadowbox(0.8)
+        
+    }
 }

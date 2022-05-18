@@ -37,7 +37,6 @@ p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 150px;
 }
 
 button {
@@ -55,6 +54,11 @@ button {
   margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
+}
+button:hover {
+  filter: brightness(130%);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 5px;
 }
 
 .heart {
@@ -307,11 +311,11 @@ ol li i {
 }
 .proj__card:hover .check {
   transition: all linear 0.3s;
-  width: 100px;
-  color: white;
+  width: 80px;
 }
 .proj__card:hover .check i {
   font-size: 28px;
+  color: white;
 }
 .proj__card:hover .check .fa-circle-check {
   transform: rotate(360deg);
@@ -319,7 +323,7 @@ ol li i {
 }
 .proj__card:hover .prix {
   transition: all linear 0.3s;
-  transform: translateX(-100px);
+  transform: translateX(-80px);
 }
 .proj__card .check {
   display: flex;
@@ -334,7 +338,6 @@ ol li i {
   color: transparent;
   height: 100%;
   border-radius: 0 20px 20px 0;
-  float: right;
 }
 .proj__card--flex {
   display: flex;
@@ -358,10 +361,11 @@ ol li i {
 @media (min-width: 800px) {
   .card__flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   .proj__card {
-    width: 33%;
+    width: 32%;
   }
 }/*# sourceMappingURL=main.css.map */
