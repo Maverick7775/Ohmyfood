@@ -41,10 +41,20 @@ p {
 
 }
 
-.spinner{
-    background-color: azure;
+.loader{
+    background-color: white;
     position: fixed;
     height: 100%;
     width: 100%;
-    
+    z-index: 5;
+    opacity: .8;
+
+    .spin{
+        width: 20px;
+        height: 20px;
+        border-top: 5px solid $primarycolor;
+        border-bottom: 5px solid $secondarycolor;
+        color: aqua;
+
+    }
 }

@@ -41,6 +41,21 @@ p {
   text-overflow: ellipsis;
 }
 
+.loader {
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  color: red;
+  z-index: 5;
+  opacity: 0.8;
+}
+.loader .spin {
+  width: 20px;
+  height: 20px;
+  border-top: 5px;
+}
+
 button {
   border-radius: 40px;
   justify-content: center;
