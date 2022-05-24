@@ -42,9 +42,19 @@ p {
 }
 
 .spinner{
-    background-color: azure;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    
+    color: rgb(82, 173, 173);
+   
+    height: 100px;
+    width: 100px;
+    z-index: 10;
+
+    .spin{
+        height: 15px;
+        width: 15px;
+        border-top: 5px $primarycolor;
+        border-bottom: 5px $secondarycolor;
+        color: red;
+
+    }
+
 }
