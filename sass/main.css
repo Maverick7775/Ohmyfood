@@ -42,7 +42,7 @@ p {
 }
 
 .loader {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   height: 100%;
   width: 100%;
@@ -64,8 +64,10 @@ p {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  -webkit-animation: rotation 4s ease-in;
-          animation: rotation 4s ease-in;
+  -webkit-animation: rotation 1s cubic-bezier(1, 0, 0, 1);
+          animation: rotation 1s cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-iteration-count: 4;
+          animation-iteration-count: 4;
 }
 
 @-webkit-keyframes apparition {
@@ -86,12 +88,18 @@ p {
   }
 }
 @-webkit-keyframes rotation {
-  to {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }
 @keyframes rotation {
-  to {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }

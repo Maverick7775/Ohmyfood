@@ -43,7 +43,7 @@ p {
 
 .loader {
 
-    background-color: rgba(0, 0, 0, $alpha: 0.7);
+    background-color: rgba(0, 0, 0, $alpha: 0.9);
     position: fixed;
     height: 100%;
     width: 100%;
@@ -61,7 +61,8 @@ p {
         border-top-color: $primary-color;
         border-bottom-color: $secondary-color;
         border-radius: 50%;
-        animation: rotation 4s ease-in;
+        animation: rotation 1s cubic-bezier(1, 0, 0, 1);
+        animation-iteration-count: 4;
 
 
     }
@@ -79,7 +80,11 @@ p {
 }
 
 @keyframes rotation {
-    to {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
         transform: rotate(360deg);
     }
 }
