@@ -46,16 +46,68 @@ p {
   position: fixed;
   height: 100%;
   width: 100%;
-  color: red;
   z-index: 5;
   opacity: 0.8;
-}
-.loader .spin {
-  width: 20px;
-  height: 20px;
-  border-top: 5px;
+  -webkit-animation: apparition 2s linear;
+          animation: apparition 2s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes apparition {
+  to {
+    transform: scale 0;
+    z-index: 0;
+  }
+}
+
+@keyframes apparition {
+  to {
+    transform: scale 0;
+    z-index: 0;
+  }
+}
+.spin::after {
+  content: "";
+  transform: translate(-50%, -50%);
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  border: 10px solid #99E2D0;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  border-radius: 50%;
+  -webkit-animation: spinning 2s ease-in-out;
+          animation: spinning 2s ease-in-out;
+  -webkit-animation: disparition 0 2s;
+          animation: disparition 0 2s;
+}
+
+@-webkit-keyframes spinning {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes spinning {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes disparition {
+  to {
+    transform: scale(0);
+    transform: z-index;
+  }
+}
+@keyframes disparition {
+  to {
+    transform: scale(0);
+    transform: z-index;
+  }
+}
 button {
   border-radius: 40px;
   justify-content: center;
@@ -109,7 +161,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
 }
 header i {
@@ -154,7 +205,7 @@ footer ul i {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  z-index: 1;
+  z-index: 2;
 }
 .section-1 .header__text {
   width: 100%;
