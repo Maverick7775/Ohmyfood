@@ -1,13 +1,15 @@
 footer {
     background-color: rgb(43, 42, 42);
     padding-bottom: 20px;
+    position: relative;
 
     h3 {
         color: white;
         font-family: 'Shrikhand', 'cursive';
         margin: 0;
         padding-top: 20px;
-        padding-left: 30px;
+        margin-left: 30px;
+        width: fit-content;
     }
 
     ul {
@@ -16,6 +18,7 @@ footer {
 
         li {
             margin: 10px;
+            width: fit-content;
 
             a {
                 color: white;
